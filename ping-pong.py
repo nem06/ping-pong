@@ -11,7 +11,7 @@ import psutil
 # hyperparameters
 H = 400 # number of hidden layer neurons
 batch_size = 10 # every how many episodes to do a param update?
-learning_rate = 1e-05
+learning_rate = 1e-04
 gamma = 0.99 # discount factor for reward
 decay_rate = 0.99 # decay factor for RMSProp leaky sum of grad^2
 resume = False # resume from previous checkpoint?
@@ -154,10 +154,8 @@ while True:
   if reward != 0: # Pong has either +1 or -1 reward exactly when game ends.
     print (('ep %d: game finished, reward: %f' % (episode_number, reward)) + ('' if reward == -1 else ' !!!!!!!!'))
     
-    
     #output
-    #Total hours:14.0
-    #Total minutes:15.0
-    #Total second:18.436697006225586
-    #RAM memory used(%) 39.7
-    #Crash for number of neurons: 400
+    #Total hours: 17.0
+    #Total minutes : 25.0
+    #Total second: 20.251272678375244
+    #RAM memory used(%) 48.0
