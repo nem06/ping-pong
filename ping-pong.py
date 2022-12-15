@@ -9,9 +9,9 @@ import psutil
 
 
 # hyperparameters
-H = 200 # number of hidden layer neurons
+H = 400 # number of hidden layer neurons
 batch_size = 10 # every how many episodes to do a param update?
-learning_rate = 1e-04
+learning_rate = 1e-05
 gamma = 0.99 # discount factor for reward
 decay_rate = 0.99 # decay factor for RMSProp leaky sum of grad^2
 resume = False # resume from previous checkpoint?
@@ -155,11 +155,9 @@ while True:
     print (('ep %d: game finished, reward: %f' % (episode_number, reward)) + ('' if reward == -1 else ' !!!!!!!!'))
     
     
-    
-    
     #output
-    #Total hours: 8.0
-    #Total minutes:35.0
-    #Total second: 5.849729061126709
-    #RAM memory used(%) 36.3
-    #Crash for number of neurons: 200
+    #Total hours:14.0
+    #Total minutes:15.0
+    #Total second:18.436697006225586
+    #RAM memory used(%) 39.7
+    #Crash for number of neurons: 400
